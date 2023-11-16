@@ -1,0 +1,32 @@
+body { 
+    border: solid black;
+    margin: 0;
+}
+header{
+    
+    background-color: #16262E;
+    text-align: center;
+    padding-top: 3%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: white;
+
+}
+.description-body{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20 px;
+}
+.sketchbox-container{
+    display: flex;
+    justify-content: center;
+}
+.sketchpad{
+    
+    border: solid black;
+    min-width: 700px;
+    min-height: 700px;
+    max-width: 700px;
+    max-height: 700px;
+    border-radius: 10px;
+}
