@@ -44,20 +44,25 @@ footer{
     justify-content: center;
     padding-bottom: 15px;
 }
-.button-group{
-
-}
-
-
 .reset-button{
+    border-width: 1px;
     border-radius: 5px;
     margin-left: 50px;
     background-color: #00f5d4;
     border-color: #16262E;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 .size-buttons{
+    border-width: 1px;
     border-radius: 5px;
     margin-left: 10px; 
     background-color: #00f5d4;
     border-color: #16262E;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.hovereff:hover{
+    background-color: #16262E;
+    color: white;
 }
