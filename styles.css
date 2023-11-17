@@ -44,9 +44,20 @@ footer{
     justify-content: center;
     padding-bottom: 15px;
 }
+.button-group{
+
+}
+
+
 .reset-button{
+    border-radius: 5px;
     margin-left: 50px;
+    background-color: #00f5d4;
+    border-color: #16262E;
 }
 .size-buttons{
-    margin-left: 10px;
+    border-radius: 5px;
+    margin-left: 10px; 
+    background-color: #00f5d4;
+    border-color: #16262E;
 }
