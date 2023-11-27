@@ -18,6 +18,7 @@ sizeButtons.addEventListener("click", event=> {
         alert("working reset pad");
     }
 });
-populatePad(size){
-    alert(size);
+function populatePad(dimension){
+    alert(dimension);
 }
+ 
