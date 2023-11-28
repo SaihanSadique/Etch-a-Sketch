@@ -1,24 +1,48 @@
 const sizeButtons = document.querySelector(".setting-options");
-const sketchPad = document.querySelector(".sketchPad");
+const sketchPad = document.querySelector(".sketchpad");
 sizeButtons.addEventListener("click", event=> {
-    let dimension;
+    let population , dimension;
     if (event.target.textContent == "small"){
-        dimension = 8;
-        populatePad(dimension);
+        dimension = 80;
+        population = 300;
+        populatePad(dimension, population);
     }
     else if(event.target.textContent == "medium"){
-        dimension = 4;
-        populatePad(dimension);
+        dimension = 40;
+        population = 600;
+        populatePad(dimension, population);
         }
     else if(event.target.textContent == "large"){
-        dimension = 2;
-        populatePad(dimension);
+        dimension = 20;
+        population = 1200;
+        populatePad(dimension, population);
     }
     else if(event.target.textContent == "Reset pad"){
-        alert("working reset pad");
+        const existCheck = sketchPad.querySelector('div');
+        if (existCheck) {
+            resetPad();
+        } 
     }
 });
-function populatePad(dimension){
-    alert(dimension);
+
+function populatePad(dimension, population){
+    for (let i = 0 ; i < population; ++i){
+        const sketchPad = document.querySelector(".sketchpad");
+        var divChild = document.createElement("div");
+        divChild.style.minWidth = `${dimension}px`; // Set width
+        divChild.style.minHeight = `${dimension}px`; // Set height
+        divChild.style.maxWidth = `${dimension}px`; // Set width
+        divChild.style.maxHeight = `${dimension}px`; // Set height
+        divChild.id = `id${i}`;
+        divChild.className = "temp" ;
+        sketchPad.appendChild(divChild);
+    }
 }
- 
+
+function resetPad() {
+    while(document.querySelector(".temp")){
+
+        
+
+    }
+}
